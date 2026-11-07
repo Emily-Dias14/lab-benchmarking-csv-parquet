@@ -10,7 +10,7 @@ Compara un formato basado en filas (CSV) con uno columnar (Apache Parquet) sobre
 | Elemento | Descripción |
 |---|---|
 | `S6_Preparación_de_Datos_y_Benchmarking.ipynb` | Notebook de Colab con los retos resueltos y sus salidas |
-| `capturas/` | Capturas de la ejecución (Figuras 1 a 8 del informe) |
+| `img/` | Capturas de la ejecución (Figuras 1 a 8 del informe) |
 
 ## Cómo reproducirlo
 
@@ -57,15 +57,14 @@ Ambos métodos devuelven las mismas filas y la misma suma.
 
 ## Capturas
 
-![Figura 1: generación](capturas/fig1_generacion.png)
-![Figura 2: escritura y pesos](capturas/fig2_escritura.png)
-![Figura 3: lectura completa](capturas/fig3_lectura.png)
-![Figura 4: RAM por enfoque](capturas/fig4_ram.png)
-![Figura 5: column pruning](capturas/fig5_column_pruning.png)
-![Figura 6: filtro Electronica](capturas/fig6_filtro_electronica.png)
-![Figura 7: Reto 2](capturas/fig7_reto2.png)
-![Figura 8: agrupación por estado](capturas/fig8_groupby.png)
-
+![Figura 1: generación](img/fig1_generacion.png)
+![Figura 2: escritura y pesos](img/fig2_escritura.png)
+![Figura 3: lectura completa](img/fig3_lectura.png)
+![Figura 4: RAM por enfoque](img/fig4_ram.png)
+![Figura 5: column pruning](img/fig5_column_pruning.png)
+![Figura 6: filtro Electronica](img/fig6_filtro_electronica.png)
+![Figura 7: Reto 2](img/fig7_reto2.png)
+![Figura 8: agrupación por estado](img/fig8_groupby.png)
 ## Nota sobre la variabilidad
 
 Colab es una máquina virtual compartida, por lo que los tiempos cambian entre sesiones. En tres corridas con 15 millones de registros, la escritura del CSV tardó 74.79 s, 75.27 s y 39.71 s. Las razones entre formatos fueron más estables que los tiempos absolutos, pero deben leerse como órdenes de magnitud.
